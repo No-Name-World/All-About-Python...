@@ -1,0 +1,8 @@
+ENG 101,English Composition,Prof. Sarah Johnson,Room 101,Mon and Wed 09:00 AM - 10:30 AM
+BIO 200,Introduction to Biology,Dr. David Rodriguez,Room 205,Tue and Thu 01:00 PM - 02:30 PM
+CHEM 220,Organic Chemistry,Dr. Emily White,Room 301,Mon and Wed 02:00 PM - 03:30 PM
+HIS 150,World History,Prof. James Smith,Room 102,Tue and Thu 11:30 AM - 12:30 PM
+PSY 101,Introduction to Psychology,Dr. Rebecca Parker,Room 202,Fri 08:00 PM - 09:30 PM
+MAT 204,Calculus II,Prof. Michael Brown,Room 303,Tue and Thu 10:00 AM - 11:30 AM
+CSC 110,Introduction to Computer Science,Dr. Samantha Lee,Room 104,Mon and Wed 03:00 PM - 04:30 PM
+BG103,Business Law,Dr. Ngu,GG08,9AM - 10AM
