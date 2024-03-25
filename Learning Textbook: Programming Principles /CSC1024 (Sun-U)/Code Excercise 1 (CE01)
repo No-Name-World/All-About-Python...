@@ -5,6 +5,9 @@
  | |_) |  __| || (_) | | |  __/    | | (_) | |_| |  ____) | || (_| | |  | |_ 
  |____/ \___|_| \___/|_|  \___|    |_|\___/ \__,_| |_____/ \__\__,_|_|   \__|
 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 In Python, def is a keyword used to define functions. When you define a function in Python, you use the def keyword followed by the function name, parameters (if any), and a colon (:). 
 The body of the function is indented and contains the code that defines what the function does.
 
@@ -22,8 +25,40 @@ ____________________________________
 • print("Hello, " + name + "!") is the body of the function, which prints a greeting message with the provided name.
 • greet("Alice") is a function call, where "Alice" is passed as an argument to the greet function.
 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
- _____ _ _   _         ______     _       _                     _   _____                  _    ______                _   _                 
+In Python, try is a keyword that is used to start a block of code where you anticipate potential errors. It is followed by a block of code (enclosed within curly braces) that you want to attempt to execute.
+
+After the try block, you can include one or more except blocks. If an error occurs within the try block, Python will immediately jump to the corresponding except block(s) and execute the code inside them. This allows you to handle exceptions gracefully and prevent your program from crashing.
+
+Here's the basic syntax:
+____________________________________________________________________________
+try:
+    # Code that may raise an exception
+    # This is the "try" block
+except SomeException:
+    # Code to handle the exception
+    # This is an "except" block for handling a specific exception
+except AnotherException:
+    # Code to handle another type of exception
+    # This is another "except" block
+except:
+    # Code to handle any other exceptions not caught by the previous blocks
+    # This is a generic "except" block that catches all exceptions
+else:
+    # Code that will run if no exceptions were raised in the "try" block
+finally:
+    # Code that will always run regardless of whether an exception occurred
+    # This is an optional "finally" block
+____________________________________________________________________________
+  
+In the provided code, try is used to wrap around the section of code where the user input is being obtained. This allows the program to catch any potential errors (e.g., if the user enters non-numeric input) and handle them gracefully without crashing the program.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+_____ _ _   _         ______     _       _                     _   _____                  _    ______                _   _                 
 |_   _(_) | | |     _  | ___ \   (_)     | |                   | | |_   _|                | |   |  ___|              | | (_)                
   | |  _| |_| | ___(_) | |_/ / __ _ _ __ | |_    __ _ _ __   __| |   | | _ __  _ __  _   _| |_  | |_ _   _ _ __   ___| |_ _  ___  _ __  ___ 
   | | | | __| |/ _ \   |  __/ '__| | '_ \| __|  / _` | '_ \ / _` |   | || '_ \| '_ \| | | | __| |  _| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
@@ -416,10 +451,76 @@ Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  
        Y8b                                                                                                                                                     
 6. Write a program that splits a restaurant bill among a group of friends. The program prompts the user to input the total of the bill and the number of friends splitting the bill. The program first calculates and adds a 10% service charge to the total, and then calculates and adds a 6% GST to the total (including the service charge). The program then outputs the amount to be paid by each friend. 
 Answer:
+def calculate_total_bill_with_charges(total_bill):
+    service_charge = total_bill * 0.1
+    total_bill_with_service_charge = total_bill + service_charge
+    gst = total_bill_with_service_charge * 0.06
+    total_bill_with_gst = total_bill_with_service_charge + gst
+    return total_bill_with_gst
+
+def calculate_amount_per_friend(total_bill_with_gst, num_friends):
+    amount_per_friend = total_bill_with_gst / num_friends
+    return amount_per_friend
+
+def main():
+    try:
+        total_bill = float(input("Enter the total bill amount: "))
+        num_friends = int(input("Enter the number of friends splitting the bill: "))
+
+        total_bill_with_gst = calculate_total_bill_with_charges(total_bill)
+
+        amount_per_friend = calculate_amount_per_friend(total_bill_with_gst, num_friends)
+
+        print(f"Each friend should pay: ${amount_per_friend:.2f}")
+
+    except ValueError:
+        print("Please enter valid numerical values for the total bill and number of friends.")
+
+if __name__ == "__main__":
+    main()
 
 
 Explanation:
+def calculate_total_bill_with_charges(total_bill):
+    # Calculate the total bill including a 10% service charge and a 6% GST
+    # Calculate the service charge (10% of the total bill)
+    service_charge = total_bill * 0.1
+    # Add the service charge to the total bill
+    total_bill_with_service_charge = total_bill + service_charge
+    # Calculate the GST (6% of the total bill with the service charge)
+    gst = total_bill_with_service_charge * 0.06
+    # Add the GST to the total bill with the service charge to get the final total bill with GST
+    total_bill_with_gst = total_bill_with_service_charge + gst
+    return total_bill_with_gst
 
+def calculate_amount_per_friend(total_bill_with_gst, num_friends):
+    # Calculate the amount each friend should pay by dividing the total bill with GST by the number of friends
+    amount_per_friend = total_bill_with_gst / num_friends
+    return amount_per_friend
+
+def main():
+    try:
+        # Prompt the user to input the total bill amount
+        total_bill = float(input("Enter the total bill amount: "))
+        # Prompt the user to input the number of friends splitting the bill
+        num_friends = int(input("Enter the number of friends splitting the bill: "))
+
+        # Calculate the total bill with service charge and GST
+        total_bill_with_gst = calculate_total_bill_with_charges(total_bill)
+
+        # Calculate the amount to be paid per friend
+        amount_per_friend = calculate_amount_per_friend(total_bill_with_gst, num_friends)
+
+        # Output the amount to be paid by each friend
+        print(f"Each friend should pay: ${amount_per_friend:.2f}")
+
+    except ValueError:
+        # Handle the case where the user enters non-numeric input
+        print("Please enter valid numerical values for the total bill and number of friends.")
+
+if __name__ == "__main__":
+    # Call the main function when the script is executed
+    main()
 
 
 
