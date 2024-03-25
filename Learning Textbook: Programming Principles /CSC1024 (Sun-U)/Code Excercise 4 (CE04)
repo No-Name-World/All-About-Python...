@@ -7,7 +7,9 @@ d88P" "Y88b                            888    Y8P                         d8888
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
        Y8b                                                                                           
-1. 
+1. Improve the following Python program (Sample Answer for CE03 Q5) as in Listing 1 by:  
+• Randomise the secret_num. The random number generated must be within the range of 1 to 200.  
+• Add an iterative function using the while loop to ask the user for a decision to continue playing the game. 
 Answer:
 
 Explanation: 
