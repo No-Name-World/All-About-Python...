@@ -33,13 +33,16 @@ Title: Print & Input Functions
 
 
 
-  .oooooo.                                         .    o8o                               .o  
- d8P'  `Y8b                                      .o8    `"'                             o888  
-888      888    oooo  oooo   .ooooo.   .oooo.o .o888oo oooo   .ooooo.  ooo. .oo.         888  
-888      888    `888  `888  d88' `88b d88(  "8   888   `888  d88' `88b `888P"Y88b        888  
-888      888     888   888  888ooo888 `"Y88b.    888    888  888   888  888   888        888  
-`88b    d88b     888   888  888    .o o.  )88b   888 .  888  888   888  888   888        888  
- `Y8bood8P'Ybd'  `V88V"V8P' `Y8bod8P' 8""888P'   "888" o888o `Y8bod8P' o888o o888o      o888o 
+
+ .d88888b.                             888    d8b                          d888   
+d88P" "Y88b                            888    Y8P                         d8888   
+888     888                            888                                  888   
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.          888   
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b         888   
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         888   
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
+       Y8b                                                                        
                                                            
 1. Write a program that prompts the user to enter five test scores and then prints the average of the test scores. 
 Answer:
@@ -94,7 +97,17 @@ main()
 
 
 
-
+ .d88888b.                             888    d8b                          .d8888b.  
+d88P" "Y88b                            888    Y8P                         d88P  Y88b 
+888     888                            888                                       888 
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.             .d88P 
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b        .od888P"  
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       d88P"      
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       888"       
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       888888888  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 2. Write a program that converts from RM to SGD (Singapore Dollar). On 1st May 2020, where 1 SGD is RM 3.04. Prompt the user to enter an RM amount and print the amount in SGD. 
 Answer:
 def rm_to_sgd(rm_amount):
@@ -117,31 +130,81 @@ if __name__ == "__main__":
 Explanation: 
 
 
-
+ .d88888b.                             888    d8b                          .d8888b.  
+d88P" "Y88b                            888    Y8P                         d88P  Y88b 
+888     888                            888                                     .d88P 
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            8888"  
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b            "Y8b. 
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 3. Write a program that prompts the user to enter the length and height of a rectangle, and prints the area and perimeter of the rectangle. 
 
 
 
 
-
+ .d88888b.                             888    d8b                             d8888  
+d88P" "Y88b                            888    Y8P                            d8P888  
+888     888                            888                                  d8P 888  
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         d8P  888  
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       d88   888  
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       8888888888 
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888             888  
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888             888  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 4. Write a program that accepts an object’s mass (in kilograms) and velocity (in meters per second) as inputs and then outputs its momentum and kinetic energy given the following information 
 • The momentum is its mass multiplied by its velocity. 
 • The kinetic energy is: (1/2)mv2. 
 
 
 
-
+ .d88888b.                             888    d8b                         888888888  
+d88P" "Y88b                            888    Y8P                         888        
+888     888                            888                                888        
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        8888888b.  
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b            "Y88b 
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888              888 
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 5. Write a program that prompts the user to input the elapsed time for an event in seconds. The program then outputs the elapsed time in hours, minutes, and seconds. For example, if the elapsed time is 9630 seconds, then the output would be 2:40:30. 
 
 
 
 
-
+ .d88888b.                             888    d8b                          .d8888b.  
+d88P" "Y88b                            888    Y8P                         d88P  Y88b 
+888     888                            888                                888        
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        888d888b.  
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       888P "Y88b 
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 6. Write a program that splits a restaurant bill among a group of friends. The program prompts the user to input the total of the bill and the number of friends splitting the bill. The program first calculates and adds a 10% service charge to the total, and then calculates and adds a 6% GST to the total (including the service charge). The program then outputs the amount to be paid by each friend. 
 
 
 
-
+ .d88888b.                             888    d8b                         8888888888 
+d88P" "Y88b                            888    Y8P                               d88P 
+888     888                            888                                     d88P  
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            d88P   
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b        88888888  
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         d88P     
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888        d88P      
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       d88P       
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 7. Write a program that prompts the user for his/her yearly income, and outputs the amount of taxes to pay based on the yearly income. The tax table is as follows: 
 a. RM 0 to 2,500 – Taxrate: 0% 
 b. RM 2,501 to 10,000 – Tax rate: 5% 
@@ -150,4 +213,16 @@ d. Exceeding 50,001 – Tax rate: 25%
 For example, if the income is RM 12,000, the total taxes would be RM 1,800 (15%). 
 
 
+
+ .d88888b.                             888    d8b                          .d8888b.  
+d88P" "Y88b                            888    Y8P                         d88P  Y88b 
+888     888                            888                                Y88b. d88P 
+888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         "Y88888"  
+888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       .d8P""Y8b. 
+888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
+Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
+ "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
+       Y8b                                                                           
+                                                                                     
+                                                                                     
 8. Company ABC is introducing a new data plan for smartphones. Each GB (Gigabyte) of data will cost RM 15, up to 10 GB. Any data over 10 GB will be charged at RM 30 per GB. Write a program that prompts the user to enter their monthly data usage (in GB), and prints the data charges for the month. 
