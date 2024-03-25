@@ -7,7 +7,10 @@ d88P" "Y88b                            888    Y8P                         d8888
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
        Y8b                                                                                           
-1. 
+1. Write a Python program using the while loop that will produce the computational output as below: 
+Starting 
+0 1 2 3 4 5 6 7 8 9  
+Done 
 Answer:
 
 Explanation: 
@@ -21,7 +24,10 @@ d88P" "Y88b                            888    Y8P                         d88P  
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       888"       
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       888888888  
        Y8b                                                                                                                                                    
-2. 
+2. Write a Python program using the while loop that will produce the computational output as below: 
+Starting 
+-20 -18 -16 -14 -12 -10 -8 -6 -4 -2  
+Done 
 Answer:
 
 Explanation: 
@@ -36,7 +42,7 @@ d88P" "Y88b                            888    Y8P                         d88P  
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
        Y8b                                                                                                                                                             
-3. 
+3. Write a Python program using the while loop that prompts the user to enter two numbers 'a' and 'b' and calculate 'a' to the power of 'b'. 
 Answer:
 
 Explanation: 
@@ -50,7 +56,7 @@ d88P" "Y88b                            888    Y8P                            d8P
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888             888  
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888             888  
        Y8b                                                                                                                                                                                                                                             
-4. 
+4. Write a Python program using the while loop that performs summing an unknown number of numbers until the user types 'DONE', then the program end. 
 Answer:
 
 Explanation: 
@@ -64,52 +70,10 @@ d88P" "Y88b                            888    Y8P                         888
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
        Y8b                                                                                                                                                             
-5. 
+5. Create a variable called secret_num and set the value to 50. Ask the user to enter a number. 
+While their guess is not the same as the secret_num, tell them if their guess is too low or too high, and ask them to have another guess. 
+If they enter the same value as secret_num, display the message 'Well done, you took [count] attempts'. 
 Answer:
 
 Explanation: 
 
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                888        
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        888d888b.  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       888P "Y88b 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-6. 
-Answer:
-
-Explanation: 
-
-
- .d88888b.                             888    d8b                         8888888888 
-d88P" "Y88b                            888    Y8P                               d88P 
-888     888                            888                                     d88P  
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            d88P   
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b        88888888  
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         d88P     
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888        d88P      
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       d88P       
-       Y8b                                                                                                                                                         
-7. 
-Answer:
-
-Explanation: 
-
-
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                Y88b. d88P 
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         "Y88888"  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       .d8P""Y8b. 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                                
-8.
-Answer:
-
-Explanation: 
