@@ -33,7 +33,6 @@ Title: Print & Input Functions
 
 
 
-
  .d88888b.                             888    d8b                          d888   
 d88P" "Y88b                            888    Y8P                         d8888   
 888     888                            888                                  888   
@@ -42,8 +41,7 @@ d88P" "Y88b                            888    Y8P                         d8888
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         888   
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
-       Y8b                                                                        
-                                                           
+       Y8b                                                                                                                                
 1. Write a program that prompts the user to enter five test scores and then prints the average of the test scores. 
 Answer:
 def main():
@@ -97,6 +95,7 @@ main()
 
 
 
+
  .d88888b.                             888    d8b                          .d8888b.  
 d88P" "Y88b                            888    Y8P                         d88P  Y88b 
 888     888                            888                                       888 
@@ -105,9 +104,7 @@ d88P" "Y88b                            888    Y8P                         d88P  
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       d88P"      
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       888"       
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       888888888  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                  
 2. Write a program that converts from RM to SGD (Singapore Dollar). On 1st May 2020, where 1 SGD is RM 3.04. Prompt the user to enter an RM amount and print the amount in SGD. 
 Answer:
 def rm_to_sgd(rm_amount):
@@ -128,6 +125,61 @@ if __name__ == "__main__":
 
 
 Explanation: 
+# 1. rm_to_sgd function: This function takes an RM amount as input and returns the equivalent amount in SGD, based on the given exchange rate.
+def rm_to_sgd(rm_amount):
+    
+    # Define the exchange rate: 1 SGD = 3.04 RM (as of 1st May 2020)
+    exchange_rate = 3.04  
+
+    
+    # Convert RM amount to SGD using the exchange rate
+    sgd_amount = rm_amount / exchange_rate
+
+
+    # Return the calculated amount in Singapore Dollars
+    return sgd_amount
+
+
+# 2. Define the main function, which serves as the entry point of the program
+def main():
+    
+    # Start a try-except block to handle potential errors
+    # Your code for the main functionality of the program goes here
+    try:
+        # 3. Inside the main function:
+        #   * The try-except block is used to handle potential errors, such as if the user enters a non-numeric input.
+        #   * It prompts the user to enter an amount in RM using the input function.
+        #   * It converts the input RM amount to a float using the float function.
+        #   * It calls the rm_to_sgd function to convert the RM amount to SGD.
+        #   * It prints the original RM amount and the converted SGD amount with two decimal places using an f-string.
+
+        
+        # Prompt the user to enter the amount in Malaysian Ringgit (RM)
+        rm_amount = float(input("Enter the amount in Malaysian Ringgit (RM): "))
+
+        
+        # Convert the RM amount to SGD using the rm_to_sgd function
+        sgd_amount = rm_to_sgd(rm_amount)
+
+
+        
+        # Print the converted amount in SGD with two decimal places
+        print(f"{rm_amount} RM is equal to {sgd_amount:.2f} SGD")
+
+    # Handle the case where the user enters a non-numeric input    
+    except ValueError:
+        
+        print("Please enter a valid numerical amount.")
+
+
+# 4. The if __name__ == "__main__": block ensures that the main function is called when the script is executed directly (as opposed to being imported as a module into another script).
+if __name__ == "__main__":    
+    
+    # Call the main function when the script is executed
+    main()
+
+
+
 
 
  .d88888b.                             888    d8b                          .d8888b.  
@@ -138,10 +190,66 @@ d88P" "Y88b                            888    Y8P                         d88P  
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                                          
 3. Write a program that prompts the user to enter the length and height of a rectangle, and prints the area and perimeter of the rectangle. 
+Answer:
+def calculate_area(length, height):
+    return length * height
+
+def calculate_perimeter(length, height):
+    return 2 * (length + height)
+
+def main():
+    try:
+        length = float(input("Enter the length of the rectangle: "))
+        height = float(input("Enter the height of the rectangle: "))
+
+        area = calculate_area(length, height)
+        perimeter = calculate_perimeter(length, height)
+
+        print(f"The area of the rectangle is: {area}")
+        print(f"The perimeter of the rectangle is: {perimeter}")
+    except ValueError:
+        print("Please enter valid numerical values for length and height.")
+
+if __name__ == "__main__":
+    main()
+
+
+Explanation:
+def main():
+    # Define the main function to handle the core functionality of the program
+    
+    try:
+        # Start a try-except block to handle potential errors
+        
+        # Prompt the user to enter the length of the rectangle
+        length = float(input("Enter the length of the rectangle: "))
+        
+        # Prompt the user to enter the height of the rectangle
+        height = float(input("Enter the height of the rectangle: "))
+        
+        # Calculate the area of the rectangle
+        area = calculate_area(length, height)
+        
+        # Calculate the perimeter of the rectangle
+        perimeter = calculate_perimeter(length, height)
+        
+        # Print the calculated area of the rectangle
+        print("The area of the rectangle is:", area)
+        
+        # Print the calculated perimeter of the rectangle
+        print("The perimeter of the rectangle is:", perimeter)
+        
+    except ValueError:
+        # Handle the ValueError exception, which occurs if the user enters invalid input
+        print("Please enter valid numerical values for length and height.")
+
+if __name__ == "__main__":
+    # Check if the script is being run directly
+    # If yes, call the main function to start the program
+    main()
+
 
 
 
@@ -154,12 +262,75 @@ d88P" "Y88b                            888    Y8P                            d8P
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       8888888888 
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888             888  
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888             888  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                 
 4. Write a program that accepts an object’s mass (in kilograms) and velocity (in meters per second) as inputs and then outputs its momentum and kinetic energy given the following information 
 • The momentum is its mass multiplied by its velocity. 
-• The kinetic energy is: (1/2)mv2. 
+• The kinetic energy is (1/2)mv2. 
+Answer:
+def calculate_momentum(mass, velocity):
+    momentum = mass * velocity
+    return momentum
+
+def calculate_kinetic_energy(mass, velocity):
+    kinetic_energy = 0.5 * mass * (velocity ** 2)
+    return kinetic_energy
+
+def main():
+    try:
+        mass = float(input("Enter the mass of the object (in kilograms): "))
+        velocity = float(input("Enter the velocity of the object (in meters per second): "))
+        
+        momentum = calculate_momentum(mass, velocity)
+        kinetic_energy = calculate_kinetic_energy(mass, velocity)
+        
+        print(f"The momentum of the object is: {momentum} kg*m/s")
+        print(f"The kinetic energy of the object is: {kinetic_energy} Joules")
+    
+    except ValueError:
+        print("Please enter valid numerical values for mass and velocity.")
+
+if __name__ == "__main__":
+    main()
+
+
+Explanation:
+def calculate_momentum(mass, velocity):
+    # Calculate momentum using the formula: mass * velocity
+    momentum = mass * velocity
+    return momentum
+
+def calculate_kinetic_energy(mass, velocity):
+    # Calculate kinetic energy using the formula: (1/2) * mass * velocity^2
+    kinetic_energy = 0.5 * mass * (velocity ** 2)
+    return kinetic_energy
+
+def main():
+    try:
+        # Prompt the user to enter the mass of the object (in kilograms)
+        mass = float(input("Enter the mass of the object (in kilograms): "))
+        
+        # Prompt the user to enter the velocity of the object (in meters per second)
+        velocity = float(input("Enter the velocity of the object (in meters per second): "))
+        
+        # Calculate the momentum of the object
+        momentum = calculate_momentum(mass, velocity)
+        
+        # Calculate the kinetic energy of the object
+        kinetic_energy = calculate_kinetic_energy(mass, velocity)
+        
+        # Print the calculated momentum and kinetic energy
+        print(f"The momentum of the object is: {momentum} kg*m/s")
+        print(f"The kinetic energy of the object is: {kinetic_energy} Joules")
+    
+    except ValueError:
+        # Handle the case where the user enters non-numeric input
+        print("Please enter valid numerical values for mass and velocity.")
+
+if __name__ == "__main__":
+    # Call the main function when the script is executed
+    main()
+
+
 
 
 
@@ -171,10 +342,65 @@ d88P" "Y88b                            888    Y8P                         888
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888              888 
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                     
 5. Write a program that prompts the user to input the elapsed time for an event in seconds. The program then outputs the elapsed time in hours, minutes, and seconds. For example, if the elapsed time is 9630 seconds, then the output would be 2:40:30. 
+Answer:
+def convert_seconds_to_hms(seconds):
+    hours = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return hours, minutes, seconds
+
+def main():
+    try:
+        elapsed_time_seconds = int(input("Enter the elapsed time in seconds: "))
+
+        hours, minutes, seconds = convert_seconds_to_hms(elapsed_time_seconds)
+
+        print(f"The elapsed time is: {hours}:{minutes:02d}:{seconds:02d}")
+
+    except ValueError:
+        print("Please enter a valid integer for the elapsed time.")
+
+if __name__ == "__main__":
+    main()
+
+
+Explanation:
+def convert_seconds_to_hms(seconds):
+    # Convert total seconds to hours, minutes, and remaining seconds
+    # Calculate hours (3600 seconds in an hour)
+    hours = seconds // 3600  
+    # Update remaining seconds after calculating hours
+    seconds %= 3600  
+    # Calculate minutes (60 seconds in a minute)
+    minutes = seconds // 60  
+    # Calculate remaining seconds
+    seconds %= 60  
+    # Return hours, minutes, and seconds as a tuple
+    return hours, minutes, seconds  
+
+def main():
+    try:
+        # Prompt the user to input the elapsed time in seconds
+        elapsed_time_seconds = int(input("Enter the elapsed time in seconds: "))
+
+        # Call the convert_seconds_to_hms() function to convert seconds to hours, minutes, and seconds
+        hours, minutes, seconds = convert_seconds_to_hms(elapsed_time_seconds)
+
+        # Print the elapsed time in hours, minutes, and seconds
+        print(f"The elapsed time is: {hours}:{minutes:02d}:{seconds:02d}")
+
+    except ValueError:
+        # Handle the ValueError exception, which occurs if the user enters non-numeric input
+        print("Please enter a valid integer for the elapsed time.")
+
+if __name__ == "__main__":
+    # Check if the script is being run directly
+    # If yes, call the main function to start the program
+    main()
+
 
 
 
@@ -187,10 +413,16 @@ d88P" "Y88b                            888    Y8P                         d88P  
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                                     
 6. Write a program that splits a restaurant bill among a group of friends. The program prompts the user to input the total of the bill and the number of friends splitting the bill. The program first calculates and adds a 10% service charge to the total, and then calculates and adds a 6% GST to the total (including the service charge). The program then outputs the amount to be paid by each friend. 
+Answer:
+
+
+Explanation:
+
+
+
+
 
 
 
@@ -202,15 +434,21 @@ d88P" "Y88b                            888    Y8P                               
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         d88P     
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888        d88P      
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       d88P       
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                                     
 7. Write a program that prompts the user for his/her yearly income, and outputs the amount of taxes to pay based on the yearly income. The tax table is as follows: 
-a. RM 0 to 2,500 – Taxrate: 0% 
+a. RM 0 to 2,500 – Tax rate: 0% 
 b. RM 2,501 to 10,000 – Tax rate: 5% 
 c. RM 10,001 to 50,000 – Tax rate: 15% 
 d. Exceeding 50,001 – Tax rate: 25% 
 For example, if the income is RM 12,000, the total taxes would be RM 1,800 (15%). 
+Answer:
+
+
+Explanation:
+
+
+
+
 
 
 
@@ -222,7 +460,13 @@ d88P" "Y88b                            888    Y8P                         d88P  
 888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                           
-                                                                                     
-                                                                                     
+       Y8b                                                                                                                                                  
 8. Company ABC is introducing a new data plan for smartphones. Each GB (Gigabyte) of data will cost RM 15, up to 10 GB. Any data over 10 GB will be charged at RM 30 per GB. Write a program that prompts the user to enter their monthly data usage (in GB), and prints the data charges for the month. 
+Answer:
+
+
+Explanation:
+
+
+
+
