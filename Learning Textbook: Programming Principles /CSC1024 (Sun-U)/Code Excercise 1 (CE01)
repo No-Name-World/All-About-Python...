@@ -1,11 +1,68 @@
 Title: Print and Input Functions
 1. Write a program that prompts the user to enter five test scores and then prints the average of the test scores. 
+Answer:
+        def main():
+            scores = []
+            for i in range(5):
+                score = float(input("Enter test score {}: ".format(i + 1)))
+                scores.append(score)
+            
+            average_score = sum(scores) / len(scores)
+            
+            print("The average of the test scores is:", average_score)
+        
+        if __name__ == "__main__":
+            main()
+
+
+Explanation: 
+            # Define a function called main(), which serves as the entry point of our program.
+            def main():
+                
+                # Initialize an empty list called scores to store the test scores entered by the user.
+                scores = []
+                
+                # Start a loop that iterates five times. It prompts the user to enter a test score five times.
+                for i in range(5):
+                    
+                    # Prompt the user to enter a test score. Convert it into a floating-point number.
+                    score = float(input("Enter test score {}: ".format(i + 1)))
+            
+                    # Add the entered test score to the scores list.
+                    scores.append(score)
+            
+                # Calculate the average of the test scores.
+                # Sum up all the test scores using sum(scores), and find the number of scores using len(scores).
+                # Divide the sum by the number of scores to get the average score.
+                average_score = sum(scores) / len(scores)
+            
+                # Print the average score to the console along with a descriptive message.
+                print("The average of the test scores is:", average_score)
+            
+            if __name__ == "__main__":
+            # Check whether the script is being run directly (not imported as a module).
+            # If it is, call the main() function to start the program.
+            # This allows the script to be both importable as a module and executable as a standalone program.
+                
+                main()
+            # The main() function serves as the entry point of the program. When the Python script is executed, the Python interpreter starts executing from the top of the script. However, if we import this script as a module into another script, we might not want the code in main() to run automatically.
+            # By using if __name__ == "__main__":, we ensure that the main() function is only called when the script is executed directly (i.e., it's the main program). If the script is imported as a module into another script, the main() function won't be executed automatically.
+            # This is a common Python idiom that allows a script to be both imported as a module and executed as a standalone program without causing unintended side effects.
+
+
+
 
 
 2. Write a program that converts from RM to SGD (Singapore Dollar). On 1st May 2020, where 1 SGD is RM 3.04. Prompt the user to enter an RM amount and print the amount in SGD. 
 
 
+
+
+
 3. Write a program that prompts the user to enter the length and height of a rectangle, and prints the area and perimeter of the rectangle. 
+
+
+
 
 
 4. Write a program that accepts an object’s mass (in kilograms) and velocity (in meters per second) as inputs and then outputs its momentum and kinetic energy given the following information 
@@ -13,10 +70,17 @@ Title: Print and Input Functions
 • The kinetic energy is: (1/2)mv2. 
 
 
+
+
 5. Write a program that prompts the user to input the elapsed time for an event in seconds. The program then outputs the elapsed time in hours, minutes, and seconds. For example, if the elapsed time is 9630 seconds, then the output would be 2:40:30. 
 
 
+
+
+
 6. Write a program that splits a restaurant bill among a group of friends. The program prompts the user to input the total of the bill and the number of friends splitting the bill. The program first calculates and adds a 10% service charge to the total, and then calculates and adds a 6% GST to the total (including the service charge). The program then outputs the amount to be paid by each friend. 
+
+
 
 
 7. Write a program that prompts the user for his/her yearly income, and outputs the amount of taxes to pay based on the yearly income. The tax table is as follows: 
