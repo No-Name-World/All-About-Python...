@@ -483,12 +483,16 @@ if __name__ == "__main__":
 Explanation:
 def calculate_total_bill_with_charges(total_bill):
     # Calculate the total bill including a 10% service charge and a 6% GST
+
     # Calculate the service charge (10% of the total bill)
     service_charge = total_bill * 0.1
+
     # Add the service charge to the total bill
     total_bill_with_service_charge = total_bill + service_charge
+
     # Calculate the GST (6% of the total bill with the service charge)
     gst = total_bill_with_service_charge * 0.06
+
     # Add the GST to the total bill with the service charge to get the final total bill with GST
     total_bill_with_gst = total_bill_with_service_charge + gst
     return total_bill_with_gst
@@ -502,6 +506,7 @@ def main():
     try:
         # Prompt the user to input the total bill amount
         total_bill = float(input("Enter the total bill amount: "))
+
         # Prompt the user to input the number of friends splitting the bill
         num_friends = int(input("Enter the number of friends splitting the bill: "))
 
@@ -543,72 +548,11 @@ c. RM 10,001 to 50,000 – Tax rate: 15%
 d. Exceeding 50,001 – Tax rate: 25% 
 For example, if the income is RM 12,000, the total taxes would be RM 1,800 (15%). 
 Answer:
-def calculate_tax(income):
-    if income <= 2500:
-        tax_amount = 0
-    elif income <= 10000:
-        tax_amount = (income - 2500) * 0.05
-    elif income <= 50000:
-        tax_amount = (income - 10000) * 0.15 + 750 
-    else:
-        tax_amount = (income - 50000) * 0.25 + 7500  
-    return tax_amount
-
-def main():
-    try:
-        income = float(input("Enter your yearly income (RM): "))
-
-        tax_amount = calculate_tax(income)
-
-        print(f"The total taxes to pay based on your yearly income of RM {income:.2f} is RM {tax_amount:.2f}")
-
-    except ValueError:
-        print("Please enter a valid numerical value for your yearly income.")
-
-if __name__ == "__main__":
-    main()
 
 
 Explanation:
-def calculate_tax(income):
-    # Calculate the amount of taxes to pay based on the provided tax table
-    # This function checks the income range and applies the corresponding tax rate accordingly
-    # For each income range, it calculates the tax amount based on the portion of income within that range
-    if income <= 2500:
-        # If income is less than or equal to 2500, tax rate is 0%
-        tax_amount = 0
-    elif income <= 10000:
-        # If income is between 2501 and 10000, tax rate is 5%
-        # Calculate tax on the portion exceeding 2500
-        tax_amount = (income - 2500) * 0.05
-    elif income <= 50000:
-        # If income is between 10001 and 50000, tax rate is 15%
-        # Calculate tax on the portion exceeding 10000 and add tax for the first 10000
-        tax_amount = (income - 10000) * 0.15 + 750  # 750 is the tax for the first 10000 at 5%
-    else:
-        # If income exceeds 50000, tax rate is 25%
-        # Calculate tax on the portion exceeding 50000 and add tax for the first 50000
-        tax_amount = (income - 50000) * 0.25 + 7500  # 7500 is the tax for the first 50000 at 15%
-    return tax_amount
 
-def main():
-    try:
-        # Prompt the user to input their yearly income
-        income = float(input("Enter your yearly income (RM): "))
 
-        # Calculate the tax amount based on the income
-        tax_amount = calculate_tax(income)
-
-        # Output the amount of taxes to pay
-        print(f"The total taxes to pay based on your yearly income of RM {income:.2f} is RM {tax_amount:.2f}")
-
-    except ValueError:
-        # Handle the case where the user enters non-numeric input
-        print("Please enter a valid numerical value for your yearly income.")
-
-if __name__ == "__main__":
-    # Call the main function when the script is executed
-    main()
 
 
 
@@ -625,58 +569,9 @@ Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  
        Y8b                                                                                                                                                  
 8. Company ABC is introducing a new data plan for smartphones. Each GB (Gigabyte) of data will cost RM 15, up to 10 GB. Any data over 10 GB will be charged at RM 30 per GB. Write a program that prompts the user to enter their monthly data usage (in GB), and prints the data charges for the month. 
 Answer:
-def calculate_data_charges(data_usage):
-    if data_usage <= 10:
-        data_charges = data_usage * 15
-    else:
-        data_charges = 10 * 15 + (data_usage - 10) * 30
-    return data_charges
-
-def main():
-    try:
-        data_usage = float(input("Enter your monthly data usage (in GB): "))
-
-        data_charges = calculate_data_charges(data_usage)
-
-        print(f"The data charges for the month based on your usage of {data_usage} GB is RM {data_charges:.2f}")
-
-    except ValueError:
-        print("Please enter a valid numerical value for your monthly data usage.")
-
-if __name__ == "__main__":
-    main()
 
 
 Explanation:
-def calculate_data_charges(data_usage):
-    # Calculate data charges based on the given conditions
-    if data_usage <= 10:
-        # For data up to 10 GB, each GB costs RM 15
-        data_charges = data_usage * 15
-    else:
-        # For data over 10 GB, the first 10 GB costs RM 15 per GB,
-        # and any additional data is charged at RM 30 per GB
-        data_charges = 10 * 15 + (data_usage - 10) * 30
-    return data_charges
-
-def main():
-    try:
-        # Prompt the user to input their monthly data usage in GB
-        data_usage = float(input("Enter your monthly data usage (in GB): "))
-
-        # Calculate the data charges for the month
-        data_charges = calculate_data_charges(data_usage)
-
-        # Output the data charges for the month
-        print(f"The data charges for the month based on your usage of {data_usage} GB is RM {data_charges:.2f}")
-
-    except ValueError:
-        # Handle the case where the user enters non-numeric input
-        print("Please enter a valid numerical value for your monthly data usage.")
-
-if __name__ == "__main__":
-    # Call the main function when the script is executed
-    main()
 
 
 
