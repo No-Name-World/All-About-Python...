@@ -7,7 +7,20 @@ d88P" "Y88b                            888    Y8P                         d8888
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
        Y8b                                                                                           
-1. 
+1. Display the following menu to the user:
+
+[1] Create a new file.
+[2] Display the file.
+[3] Add a new item to the file. 
+Enter 1, 2, or 3:
+
+Ask the user to enter 1, 2, or 3. If they select anything other than 1, 2, or 3 it should display a suitable error message.
+
+If they select 1, ask the user to enter a school subject (For example, CSC1024 Programming Principles, etc.) and save it to a new file called “Subject.txt”. It should overwrite any existing file with a new file.
+If they select 2, display the contents of the “Subject.txt” file.
+If they select 3, ask the user to enter a new subject and save it to the file, and then display the entire contents of the file.
+Run the program several times to test the options.
+
 Answer:
 
 Explanation: 
@@ -21,95 +34,27 @@ d88P" "Y88b                            888    Y8P                         d88P  
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       888"       
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       888888888  
        Y8b                                                                                                                                                    
-2. 
-Answer:
+2. Write a program to ask user what multiplication table the user would like to calculate. 
+Then, store the output of the multiplication table in a text file (e.g. TT2TXT.txt). 
+Lastly, once the multiplication table program has completed the file writing. Open the file in read mode, and read the text file to display the file contents on the screen.
 
-Explanation: 
-
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                     .d88P 
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            8888"  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b            "Y8b. 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-3. 
-Answer:
-
-Explanation: 
-
- .d88888b.                             888    d8b                             d8888  
-d88P" "Y88b                            888    Y8P                            d8P888  
-888     888                            888                                  d8P 888  
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         d8P  888  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       d88   888  
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       8888888888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888             888  
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888             888  
-       Y8b                                                                                                                                                                                                                                             
-4. 
-Answer:
-
-Explanation: 
-
- .d88888b.                             888    d8b                         888888888  
-d88P" "Y88b                            888    Y8P                         888        
-888     888                            888                                888        
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        8888888b.  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b            "Y88b 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888              888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-5. 
-Answer:
-
-Explanation: 
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                888        
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        888d888b.  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       888P "Y88b 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-6. 
-Answer:
-
-Explanation: 
-
-
- .d88888b.                             888    d8b                         8888888888 
-d88P" "Y88b                            888    Y8P                               d88P 
-888     888                            888                                     d88P  
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            d88P   
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b        88888888  
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         d88P     
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888        d88P      
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       d88P       
-       Y8b                                                                                                                                                         
-7. 
-Answer:
-
-Explanation: 
-
-
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                Y88b. d88P 
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         "Y88888"  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       .d8P""Y8b. 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                                
-8.
+Example output:
+____________________________________________
+Display multiplication table of ? 2
+A multiplication table of 2 times 1 to 12. 
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+2 x 11 = 22
+2 x 12 = 24
+____________________________________________
 Answer:
 
 Explanation: 
