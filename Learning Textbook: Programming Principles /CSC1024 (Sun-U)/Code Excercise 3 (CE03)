@@ -106,8 +106,8 @@ Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  
 Answer:
 while True:
     try:
-        a = float(input("Enter the base number (a): "))
-        b = float(input("Enter the exponent (b): "))
+        a = int(input("Enter the base number (a): "))
+        b = int(input("Enter the exponent (b): "))
         result = a ** b
         print(f"{a} to the power of {b} is equal to {result}")
         break
@@ -119,11 +119,11 @@ Explanation:
 # Start an infinite loop to continuously prompt the user for input
 while True:
     try:
-        # Prompt the user to enter the base number 'a' and convert it to a float
-        a = float(input("Enter the base number (a): "))
+        # Prompt the user to enter the base number 'a' and convert it to an integer
+        a = int(input("Enter the base number (a): "))
         
-        # Prompt the user to enter the exponent 'b' and convert it to a float
-        b = float(input("Enter the exponent (b): "))
+        # Prompt the user to enter the exponent 'b' and convert it to an integer
+        b = int(input("Enter the exponent (b): "))
         
         # Calculate 'a' raised to the power of 'b' and store the result
         result = a ** b
