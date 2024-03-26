@@ -7,7 +7,8 @@ d88P" "Y88b                            888    Y8P                         d8888
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888   
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       8888888 
        Y8b                                                                                           
-1. 
+1. Define a subprogram (user-defined function) that will ask the user to enter a number and save it as the variable 'num'. 
+Define another subprogram that will use 'num' and count from 1 to that number. 
 Answer:
 
 Explanation: 
@@ -21,7 +22,10 @@ d88P" "Y88b                            888    Y8P                         d88P  
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       888"       
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       888888888  
        Y8b                                                                                                                                                    
-2. 
+2. Define a subprogram (user-defined function) that will ask the user to pick a low and a high number, and then generate a random number between those two values and store it in a variable called 'comp_num'. 
+Define another subprogram (user-defined function) that will give the instruction 'I am thinking of a number...' and then ask the user to guess the number they are thinking of. 
+Define a third subprogram (user-defined function) that will check to see if the comp_num is the same as the user’s guess. 
+If it is, it should display the message 'Correct, you win', otherwise it should keep looping, telling the user if they are too low or too high and asking them to guess again until they guess correctly. 
 Answer:
 
 Explanation: 
@@ -36,7 +40,16 @@ d88P" "Y88b                            888    Y8P                         d88P  
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
        Y8b                                                                                                                                                             
-3. 
+3. Display the following menu to the user: 
+      [1] Addition 
+      [2] Subtraction 
+      Enter 1 or 2: 
+
+If they enter a 1, it should run a subprogram (user-defined function) that will generate two random numbers between 5 and 20, and ask the user to add them together. Work out the correct answer and return both the user’s answer and the correct answer. 
+If they entered 2 as their selection on the menu, it should run a subprogram (user-defined function) that will generate one number between 25 and 50 and another number between 1 and 25 and ask them to work out num1 minus num2. 
+This way they will not have to worry about negative answers. Return both the user’s answer and the correct answer. 
+Create another subprogram (user-defined function) that will check if the user’s answer matches the actual answer. If it does, display 'Correct', otherwise display a message that will say 'Incorrect, the answer is' and display the real answer. 
+If they do not select a relevant option on the first menu you should display a suitable message. 
 Answer:
 
 Explanation: 
@@ -50,66 +63,36 @@ d88P" "Y88b                            888    Y8P                            d8P
 Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888             888  
  "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888             888  
        Y8b                                                                                                                                                                                                                                             
-4. 
+4. Modify Lab 6, Question 6 which will produce the following output using the user-defined function: 
+__________________________________________________________________________
+A program to find the maximum and minimum numbers in a list.  
+Enter how many numbers you want to read into a list: 3 
+Enter a number: -100 
+Enter a number: 0 
+Enter a number: 100 
+Numbers in the list = [-100.0, 0.0, 100.0]  
+Maximum Number = 100.0 
+Minimum Number = -100.0 
+__________________________________________________________________________
+
+The program should consist of three (3) user-defined functions as follows: 
+__________________________________________________________________________
+def read_number(total_num_to_read):
+    ...
+    return user_list
+
+def find_max_number(a_list_of_num):
+    ...
+    return max_num
+
+def find_min_number(a_list_of_num):
+    ...
+    return min_num
+__________________________________________________________________________
+The main program will consist of user-defined function callers and a set of return variables for storing the return arguments from a user-defined function.
+In the end, the program will print the content of the list, the maximum number in the list, and the minimum number in the list.
+
 Answer:
 
 Explanation: 
 
- .d88888b.                             888    d8b                         888888888  
-d88P" "Y88b                            888    Y8P                         888        
-888     888                            888                                888        
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        8888888b.  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b            "Y88b 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888              888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-5. 
-Answer:
-
-Explanation: 
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                888        
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.        888d888b.  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       888P "Y88b 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                             
-6. 
-Answer:
-
-Explanation: 
-
-
- .d88888b.                             888    d8b                         8888888888 
-d88P" "Y88b                            888    Y8P                               d88P 
-888     888                            888                                     d88P  
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.            d88P   
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b        88888888  
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888         d88P     
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888        d88P      
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888       d88P       
-       Y8b                                                                                                                                                         
-7. 
-Answer:
-
-Explanation: 
-
-
-
- .d88888b.                             888    d8b                          .d8888b.  
-d88P" "Y88b                            888    Y8P                         d88P  Y88b 
-888     888                            888                                Y88b. d88P 
-888     888 888  888  .d88b.  .d8888b  888888 888  .d88b.  88888b.         "Y88888"  
-888     888 888  888 d8P  Y8b 88K      888    888 d88""88b 888 "88b       .d8P""Y8b. 
-888 Y8b 888 888  888 88888888 "Y8888b. 888    888 888  888 888  888       888    888 
-Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  d88P 
- "Y888888"   "Y88888  "Y8888   88888P'  "Y888 888  "Y88P"  888  888        "Y8888P"  
-       Y8b                                                                                                                                                                
-8.
-Answer:
-
-Explanation: 
