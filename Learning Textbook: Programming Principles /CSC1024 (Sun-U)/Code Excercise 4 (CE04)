@@ -190,10 +190,52 @@ Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888       Y88b  
 10101010101
 10101010101
 
-Do not use while loop to print the pattern ('10101010101') for 5 times. The program should print the pattern character-by-character.
+Do not use the while loop to print the pattern ('10101010101') for 5 times. The program should print the pattern character-by-character.
 Answer:
+row = 0
+while row < 5:
+    col = 0
+    while col < 11:
+        if col % 2 == 0:
+            print("1", end='')
+        else:
+            print("0", end='')
+        col = col + 1
+    print()
+    row = row + 1
+
 
 Explanation: 
+# Initialize the row counter
+row = 0
+
+# Outer loop for iterating over rows
+while row < 5:
+    # Initialize the column counter
+    col = 0
+    
+    # Inner loop for iterating over columns
+    while col < 11:
+        # Check if the column index is even or odd
+        if col % 2 == 0:
+            # If even, print '1'
+            print("1", end='')
+        else:
+            # If odd, print '0'
+            print("0", end='')
+        
+        # Increment the column counter
+        col = col + 1
+    
+    # Move to the next line after printing each row
+    print()
+    
+    # Increment the row counter
+    row = row + 1
+
+
+
+
 
  .d88888b.                             888    d8b                             d8888  
 d88P" "Y88b                            888    Y8P                            d8P888  
