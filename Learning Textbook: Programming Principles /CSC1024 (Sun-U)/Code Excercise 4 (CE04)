@@ -28,8 +28,87 @@ while guess_num != secret_num:
 print(f'Well done, you took ' + str(count) + ' attempts.' )
 _____________________________________________________________________________________________________________
 Answer:
+import random
+
+def play_game():
+    secret_num = random.randint(1, 200)
+    guess_num = int(input('Guess my secret number (between 1 and 200): '))
+    count = 1
+
+    while guess_num != secret_num:
+        if guess_num < secret_num:
+            print('Too Low')
+        else:
+            print('Too High')
+        count += 1
+        guess_num = int(input('Have another guess: '))
+
+    print(f'Well done, you took {count} attempts.')
+
+def main():
+    play_game()
+    while True:
+        decision = input("Do you want to play again? ((Y)es / (N)o): ")
+        if decision.lower() != 'y':
+            print("Thanks for playing!")
+            break
+        play_game()
+
+if __name__ == "__main__":
+    main()
+
 
 Explanation: 
+# Import the random module to generate random numbers
+import random
+
+# Define a function to play the game
+def play_game():
+    # Generate a random number between 1 and 200 for the player to guess
+    secret_num = random.randint(1, 200)
+    
+    # Ask the player to guess the secret number
+    guess_num = int(input('Guess my secret number (between 1 and 200): '))
+    count = 1  # Initialize the count of attempts
+    
+    # Loop until the player guesses the correct number
+    while guess_num != secret_num:
+        # Provide feedback based on whether the guess is too low or too high
+        if guess_num < secret_num:
+            print('Too Low')
+        else:
+            print('Too High')
+        
+        count += 1  # Increment the attempt count
+        # Prompt the player for another guess
+        guess_num = int(input('Have another guess: '))
+    
+    # Congratulate the player upon guessing the correct number and display the count of attempts
+    print(f'Well done, you took {count} attempts.')
+
+# Define the main function
+def main():
+    play_game()  # Start the game
+    
+    # Loop to ask the player if they want to play again
+    while True:
+        # Ask the player if they want to play again
+        decision = input("Do you want to play again? ((Y)es / (N)o): ")
+        
+        # Check if the player decides to not play again
+        if decision.lower() != 'y':
+            print("Thanks for playing!")
+            break  # Exit the loop and end the game
+        
+        play_game()  # If the player wants to play again, start a new game
+
+# Check if the script is being run directly
+if __name__ == "__main__":
+    main()
+
+
+
+
 
  .d88888b.                             888    d8b                          .d8888b.  
 d88P" "Y88b                            888    Y8P                         d88P  Y88b 
@@ -56,8 +135,42 @@ Here is your multiplication table:
 8 times 9  =  72  
 8 times 10 =  80 
 Answer:
+num = int(input("Which multiplication table would you like to print? "))
+
+limit = int(input("How high would you like it to go? "))
+
+print("Here is your multiplication table:")
+i = 1
+while i <= limit:
+    result = num * i
+    print(f"{num} times {i}  =  {result}")
+    i += 1
+
 
 Explanation: 
+# Input the number for which multiplication table is to be generated
+num = int(input("Which multiplication table would you like to print? "))
+
+# Input the maximum limit for the table
+limit = int(input("How high would you like it to go? "))
+
+# Display a message indicating the start of the multiplication table
+print("Here is your multiplication table:")
+
+# Initialize a counter for the while loop
+i = 1
+
+# Loop until the counter reaches the specified limit
+while i <= limit:
+    # Calculate the result of multiplying the number by the current counter value
+    result = num * i
+    # Display the multiplication expression and the result
+    print(f"{num} times {i}  =  {result}")
+    # Increment the counter for the next iteration
+    i += 1
+
+
+
 
 
  .d88888b.                             888    d8b                          .d8888b.  
