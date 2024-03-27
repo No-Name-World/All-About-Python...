@@ -9,8 +9,38 @@ Y88b.Y8b88P Y88b 888 Y8b.          X88 Y88b.  888 Y88..88P 888  888         888
        Y8b                                                                                           
 1. Ask the user to enter a number between 1 and 12 and then display the multiplication table for that number. Use only for-loop for the iterative process. 
 Answer:
+number = int(input("Enter a number between 1 and 12: "))
+
+if number < 1 or number > 12:
+    print("Please enter a number between 1 and 12.")
+else:
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, 13):
+        print(f"{number} x {i} = {number * i}")
+
 
 Explanation: 
+# Ask the user to enter a number between 1 and 12
+number = int(input("Enter a number between 1 and 12: "))
+
+# Validate the input
+# If the input is not within the range of 1 to 12, prompt the user to enter a valid number.
+# Otherwise, proceed to display the multiplication table.
+if number < 1 or number > 12:
+    print("Please enter a number between 1 and 12.")
+else:
+    # Display the multiplication table for the entered number
+    # Iterate from 1 to 12 (inclusive) using a for loop to generate the multiplication table.
+    # For each iteration, print the multiplication operation in the format "number x i = result",
+    # where 'number' is the user-input number, 'i' is the current iteration value,
+    # and 'result' is the product of 'number' and 'i'.
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, 13):
+        print(f"{number} x {i} = {number * i}")
+
+
+
+
 
  .d88888b.                             888    d8b                          .d8888b.  
 d88P" "Y88b                            888    Y8P                         d88P  Y88b 
