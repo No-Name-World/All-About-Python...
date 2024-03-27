@@ -291,5 +291,125 @@ Do you want to run the program again? [Y/N]: Y
 __________________________________________________________________________________________
 
 Answer:
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def validate_selection(selection):
+    return selection == '1' or selection == '2'
+
+def validate_temperature(temp):
+    return temp.isdigit()
+
+def convert_and_print(min_temp, max_temp, conversion_func):
+    for temp in range(int(min_temp), int(max_temp) + 1):
+        converted_temp = conversion_func(temp)
+        print(f"{temp} {'C' if conversion_func == celsius_to_fahrenheit else 'F'} = {converted_temp:.1f} {'F' if conversion_func == celsius_to_fahrenheit else 'C'}")
+
+def run_program():
+    while True:
+        print("Temperature Conversion Programme.")
+        print("[1] Convert Celsius to Fahrenheit.")
+        print("[2] Convert Fahrenheit to Celsius.")
+        selection = input("Enter your selection, 1 or 2: ")
+
+        if not validate_selection(selection):
+            print("ERROR: Invalid Selection!")
+            continue
+
+        min_temp = input("Enter minimum temperature: ")
+        max_temp = input("Enter maximum temperature: ")
+
+        if not (validate_temperature(min_temp) and validate_temperature(max_temp) and int(min_temp) <= int(max_temp)):
+            print("ERROR: Invalid Input!")
+            continue
+
+        min_temp, max_temp = int(min_temp), int(max_temp)
+
+        if selection == '1':
+            print("Celsius (C) to Fahrenheit (F) Conversion")
+            convert_and_print(min_temp, max_temp, celsius_to_fahrenheit)
+        else:
+            print("Fahrenheit (F) to Celsius (C) Conversion")
+            convert_and_print(min_temp, max_temp, fahrenheit_to_celsius)
+
+        print("Conversion Done!")
+
+        run_again = input("Do you want to run the program again? [Y/N]: ").upper()
+        if run_again != 'Y':
+            break
+
+run_program()
+
 
 Explanation: 
+# Function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+# Function to convert Fahrenheit to Celsius
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+# Function to validate the user's menu selection
+def validate_selection(selection):
+    return selection == '1' or selection == '2'
+
+# Function to validate the temperature input
+def validate_temperature(temp):
+    return temp.isdigit()
+
+# Function to convert and print the temperature conversions within the given range
+def convert_and_print(min_temp, max_temp, conversion_func):
+    for temp in range(int(min_temp), int(max_temp) + 1):
+        converted_temp = conversion_func(temp)
+        # Print the conversion result with appropriate units
+        print(f"{temp} {'C' if conversion_func == celsius_to_fahrenheit else 'F'} = {converted_temp:.1f} {'F' if conversion_func == celsius_to_fahrenheit else 'C'}")
+
+# Main function to run the temperature conversion program
+def run_program():
+    while True:
+        print("Temperature Conversion Programme.")
+        print("[1] Convert Celsius to Fahrenheit.")
+        print("[2] Convert Fahrenheit to Celsius.")
+        # Prompt user for menu selection
+        selection = input("Enter your selection, 1 or 2: ")
+
+        # Validate user's selection
+        if not validate_selection(selection):
+            print("ERROR: Invalid Selection!")
+            # 'continue' means to skip the rest of the loop's code and start from the next iteration
+            continue
+
+        # Get the minimum and maximum temperature values
+        min_temp = input("Enter minimum temperature: ")
+        max_temp = input("Enter maximum temperature: ")
+
+        # Validate the temperature input and range
+        if not (validate_temperature(min_temp) and validate_temperature(max_temp) and int(min_temp) <= int(max_temp)):
+            print("ERROR: Invalid Input!")
+            # 'continue' here means to skip the rest of the loop's code and start from the next iteration
+            continue
+
+        min_temp, max_temp = int(min_temp), int(max_temp)
+
+        # Perform the selected conversion and print the results
+        if selection == '1':
+            print("Celsius (C) to Fahrenheit (F) Conversion")
+            convert_and_print(min_temp, max_temp, celsius_to_fahrenheit)
+        else:
+            print("Fahrenheit (F) to Celsius (C) Conversion")
+            convert_and_print(min_temp, max_temp, fahrenheit_to_celsius)
+
+        print("Conversion Done!")
+
+        # Ask user if they want to run the program again
+        run_again = input("Do you want to run the program again? [Y/N]: ").upper()
+        # 'break' means to exit the loop and continue executing the code after the loop
+        if run_again != 'Y':
+            break
+
+# Run the program
+run_program()
